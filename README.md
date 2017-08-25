@@ -25,7 +25,8 @@ pip install -e .
 
 ## Usage
 
-`
+```python
+
 # Import
 from imgTransformer import Transformer
 import cv2
@@ -71,4 +72,17 @@ cv2.rectangle(img_trans,(boxes_trans[0][0],boxes_trans[0][1]),(boxes_trans[0][2]
 cv2.imwrite('original.JPEG',img)
 cv2.imwrite('transformed.JPEG',img_trans)
 
-`
+```
+
+## Result
+
+Original
+![alt text][Original]
+
+Transformed
+![alt text][Transformed]
+
+[Original]: original.JPEG "Original"
+[Transformed]: transformed.JPEG "Transformed"
+
+The above mentioned transformations are applied completely randomly so a different run of test.py can result in a different transformed image from what is shown above.
