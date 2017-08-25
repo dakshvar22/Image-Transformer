@@ -27,7 +27,7 @@ pip install -e .
 
 `
 # Import
-from imgTransform import Transformer
+from imgTransformer import Transformer
 import cv2
 
 # Instantiation
