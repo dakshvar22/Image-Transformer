@@ -1,5 +1,5 @@
-from AugmentImg import TransformImg
-from AugmentBox import TransformBox
+from .AugmentImg import TransformImg
+from .AugmentBox import TransformBox
 import random
 import numpy as np
 
@@ -22,7 +22,7 @@ class Transformer():
 	def callTransform(self,img,idx,boxes=None,transformationMatrix=None):
 		if self.transform_boxes:
 			if boxes == None:
-				print 'Boxes not supplied'
+				print('Boxes not supplied')
 		img_clone = img.copy()
 		h,w = img.shape[0],img.shape[1]
 
